@@ -164,7 +164,7 @@ if st.session_state.get("loading") and st.session_state["messages"] and st.sessi
     with st.spinner("TailorTalk is thinking..."):
         try:
             response = requests.post(
-                "http://localhost:8000/chat",
+                "https://your-backend-service-name.onrender.com",
                 json={"message": st.session_state["messages"][-1]["content"]},
                 timeout=30
             )
