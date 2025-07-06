@@ -61,7 +61,7 @@ uvicorn backend.main:app --reload
 streamlit run frontend.py
 ```
 
-- Visit [http://localhost:8501](http://localhost:8501) to chat with TailorTalk!
+- Visit [http://tailortalk](https://tailortalk-1-ui4a.onrender.com/) to chat with TailorTalk!
 
 ---
 
