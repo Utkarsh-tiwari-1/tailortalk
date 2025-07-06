@@ -10,3 +10,4 @@ httpx
 python-multipart
 dateparser 
 streamlit
+langchain-community
