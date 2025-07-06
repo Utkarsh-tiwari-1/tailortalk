@@ -11,6 +11,11 @@ from langchain.schema import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 import re
 
+service_account_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
+if service_account_json:
+    os.makedirs("backend", exist_ok=True)
+    with open("backend/service_account.json", "w") as f:
+        f.write(service_account_json)
 load_dotenv()
 
 app = FastAPI()
